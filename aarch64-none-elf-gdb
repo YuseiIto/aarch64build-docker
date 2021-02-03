@@ -1,0 +1,2 @@
+#!/bin/sh
+docker run -i -t --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" -v `pwd`:`pwd` -w `pwd` --rm itoyusei/gcc-aarch64-elf "aarch64-none-elf-gdb" "$@"

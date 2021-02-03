@@ -6,4 +6,5 @@ RUN mkdir -p /opt
 RUN tar Jxf gcc-arm.tar.xz -C /opt/
 RUN ln -s /opt/gcc-arm-10.2-2020.11-x86_64-aarch64-none-elf /opt/aarch64-elf
 ENV PATH /opt/aarch64-elf/bin:$PATH
+RUN apt install --reinstall libpython2.7 -y
 CMD sh
