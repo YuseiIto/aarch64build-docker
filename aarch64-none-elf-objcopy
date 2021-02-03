@@ -1,2 +1,2 @@
 #!/bin/sh
-docker run -v `pwd`:`pwd` -w `pwd` itoyusei/gcc-aarch64-elf "aarch64-none-elf-objcopy" "$@"
+docker run -v `pwd`:`pwd` -w `pwd` --rm itoyusei/gcc-aarch64-elf "aarch64-none-elf-objcopy" "$@"
